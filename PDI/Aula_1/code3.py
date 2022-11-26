@@ -21,8 +21,8 @@ image = load_red_roses()
 # Show original image
 show_image(image,'image RGB')
 
-# Obtain the red channel
-red_channel = image[:, : , 2]
+# Obtain the red channel (BGR)
+red_channel = image[:, : ,0]
 
 # Show original image
 show_image(red_channel,'image red channel')

@@ -3,6 +3,7 @@ from skimage.color import rgb2gray
 import matplotlib.pyplot as plt
 from skimage.filters import threshold_otsu
 
+
 def show_image(image, title='Image', cmap_type='gray'):
     plt.imshow(image, cmap=cmap_type)
     plt.title(title)
@@ -31,3 +32,5 @@ binary = chess_pieces_image_gray > thresh
 
 # Show the binary image
 show_image(binary, 'Binary image')
+
+plt.imsave('test.jpg', binary)
